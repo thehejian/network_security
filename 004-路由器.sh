@@ -18,7 +18,41 @@
                 #配置设备名、接口地址
                 #查看路由表
                 #保存路由器配置
-                
+
+#直连路由配置
+#路由一般接交换机
+#交换机一般接主机               
+
+#路由器物理端口配置IP
 <Huawei>system-view
 [Huawei]sysname R1
-[R1]
+[R1]interface GigabitEthernet 0/0/0
+[R1-GigabitEthernet0/0/0]ip address 192.168.1.254 255.255.255.0
+#[R1-GigabitEthernet0/0/0]ip address 192.168.1.254/24
+#配的路由的网关
+#配置路由接口IP地址
+[R1-GigabitEthernet0/0/0]quit
+[R1]quit
+<R1>display ip routing-table
+#路由表
+
+#配置交换机的管理IP，配置在整体，不用每个主机单独去配置
+<Huawei>system-view
+[Huawei]interface Vlanif 1
+#交换机的管理IP是一个虚拟接口,不是物理口
+#跟交换机下的主机在同一个网段
+[Huawei-Vlanif1]ip address 192.168.1.100 255.255.255.0
+[Huawei-Vlanif1]undo shutdown
+#重启激活
+
+
+
+
+
+
+
+
+
+
+
+
