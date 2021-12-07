@@ -20,3 +20,11 @@
                         #服务商的知名度、靠谱度
                         #以实际需求为本；云主机、数据库、CDN、安全等，选择性价比最优的
                 #华为云产品介绍
+#远程控制协议
+        #RDP    3389    windows服务器
+        #SSH    22      Linux服务器
+#常用SSH管理工具
+        #PC端      Xshell        SecureCRT       Putty
+        #手机端    ITerminal     Termius         阿里APP等
+
+
