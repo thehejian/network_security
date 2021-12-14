@@ -47,6 +47,9 @@ DNS
 反向：（PTR）（指针）从域名到IP
 别名：（CNAME）
 
+同一个网卡添加多个IP
+Internet协议版本4（TCP/IPV4）——属性——高级——添加
+
 
 
 
