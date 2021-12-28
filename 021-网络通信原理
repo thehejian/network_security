@@ -43,17 +43,7 @@ ICMP协议
 Internet control message protocol 互联网控制消息协议
 用于IP网络中发送控制消息，提供可能问题的反馈
 
-ICMP:协议号1
-TCP：协议号6
-UDP：协议号17
 
-抓包理解数据包的封装过程
-三层IP不变，二层mac一直在变
-[R]display interface g0/0/1
-#查看接口的详细信息
-
-报文类型 8 request	
-报文类型 0 reply	回复
 
 
 
