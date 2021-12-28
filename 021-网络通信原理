@@ -38,3 +38,27 @@ IP包头格式
 	可选项											40字节
 	数据
 ttl 定时器，计时器
+
+ICMP协议
+Internet control message protocol 互联网控制消息协议
+用于IP网络中发送控制消息，提供可能问题的反馈
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
