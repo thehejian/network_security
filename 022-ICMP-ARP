@@ -1,3 +1,5 @@
+ICMP	
+
 ICMP:协议号1
 TCP：协议号6
 UDP：协议号17
@@ -14,4 +16,14 @@ ARP
 	地址解析协议
 	已知对方IP地址，获取对方的mac地址
 应用场景
-	
+
+arp -a
+显示arp缓存表
+[R]display interface GigabitEthernet 0/0/0	
+#查看路由器端口情况
+[SW]display interface g0/0/1
+#查看交换机情况
+[sw]display interface brief
+#简单查询有多少接口
+
+华为网络设备系统：vrp
