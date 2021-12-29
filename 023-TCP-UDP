@@ -1,0 +1,114 @@
+传输层协议
+传输层概念
+  传输层作用
+    IP层提供点到点的连接
+    传输层提供端到端的连接
+传输层协议
+  TCP协议概述
+    transmission control protocol
+    传输控制协议
+    可靠的、面向连接的协议
+    传输效率低
+      物数网传会表应
+      物理层、数据传输层、网络层、传输层、会话层、表示层、应用层
+  UDP协议概述
+      User datagram protocol
+      用户数据报协议’不可靠无连接的服务
+      传输效率高
+
+TCP封装格式
+  TCP报文段
+    将若干字节构成一个分组
+  TCP报文封装在IP数据报中
+    IP首部    TCP报文段
+    SYN   同步位，TCP需要建立连接时，这个值为1
+    ACK   确认位，当该位为1时，用于确认发送方的数据
+    FIN   当TCP断开时该位置为1
+TCP连接
+  TCP提供全双工服务    数据可以同一时间双向传输
+  理解全双工，才能理解TCP连接与断开
+    TCP的连接：三次握手
+      A 发送SYN，请求建立连接  （seq=100，ctl=SYN）
+      B 发送SYN、ACK         （seq=300，ack=101，ctl=SYN、ACK）
+      A 发送ACK              （seq=101,ack=301,ctl=ACK)
+    TCP的断开：四次挥手
+    
+      A   SYN=1         seq=X
+      B   SYN=1 ACK=1   ack=X+1 seq=Y
+      A   ACK           seq=X+1 ack=Y+1
+TCP 流控方式：滑动窗口 win 
+
+TCP差错校验方式
+  校验和
+  确认
+  超时
+
+TCP重传计数器
+  为了控制丢失的数据段
+TCP保活计时器
+TCP时间等待计时器
+
+TCP常见端口
+21      FTP 控制连接
+20      FTP 数据连接
+23      Telnet
+53      DNS
+80      HTTP
+    
+win系统服务查看
+C:\Windows\System32\drivers\etc\services
+    
+UDP应用
+69      TFTP    简单文件传输协议
+53      DNS     域名服务
+123     NTP     网络时间协议
+111     RPC     远程过程调用
+
+UDP没有流控机制
+UDP只有校验和差错控制
+  需要上层应用提供差错控制：例如 TFTP协议
+  
+应用层协议
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
