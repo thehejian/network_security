@@ -53,9 +53,37 @@ ICMP    问题反馈机制
         协议号1
         echo-request（echo）      请求包
         echo-reply              应答包
+
 ARP     地址解析协议                  已知IP地址  解析mac
-TCP     传输控制协议  协议号：6
-        
+
+TCP     传输控制协议  协议号：6     20字节
+源端口     目标端口
+序列号
+确认号
+首部长度    保留位     控制位     窗口大小
+校验和     紧急指针
+
+UDP     用户数据报协议 协议号17
+源端口     目标端口
+长度      校验和
+
+FTP     21\20   TCP
+        主动、被动模式
+TFTP    69      UDP
+DNS     53      UDP、TCP
+NTP     123     UDP
+HTTP    80      TCP
+HTTPS   443     TCP
+Telnet  23      UDP
+ssh     22      TCP
+RDP     3389    TCP
+POP3    110     ？
+smtp    25      ？
+SNMP    161     ？
+
+
+
+
 
 
 
