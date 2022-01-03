@@ -1,0 +1,19 @@
+trunk
+trunk原理
+  交换机之间的vlan通信
+    Access接入链路  交换机到主机 port link-type access
+    trunk中继链路
+      中继链路、干道链路
+      交换机之间，运行带着vlan标签通过
+        特殊情况，发出去的数据帧的vlanID和出接口的pvid相同时，脱标签通过
+  vlan标识
+  链路类型
+  trunk端口
+trunk配置
+  配置接口为trunk模式
+  
+  配置vlan trunk
+hybrid
+  更灵活的控制vlan标签
+  hybrid端口配置
+  hybrid端口配置实例
