@@ -14,7 +14,74 @@ vlan配置
   创建删除vlan
   将端口加入vlan
   验证vlan配置
-  
+<Huawei>undo terminal monitor
+<Huawei>system-view
+[Huawei]vlan 1905
+[Huawei 1905]quit
+[Huawei]display vlan
+[Huawei]interface GigabitEthernet 0/0/1
+[Huawei-GigabitEthernet0/0/1]port link-type access 
+[Huawei-GigabitEthernet0/0/1]port default vlan 1905
+[Huawei-GigabitEthernet0/0/1]quit 
+[Huawei]display vlan 1905
+[Huawei]vlan batch 1901 1902
+[Huawei]undo vlan batch 1901 1902 1905
+
+组操作
+<Huawei>undo terminal monitor
+<Huawei>system-view
+[Huawei]vlan 2
+[Huawei]port-group 1
+创建接口组
+[Huawei-port-group-1]group-member GigabitEthernet 0/0/1 GigabitEthernet 0/0/2
+接口加入接口组
+[Huawei-port-group-1]port link-type access
+接口组的类型改成access
+[Huawei-port-group-1]port default vlan 2
+接口组加入VLAN2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
