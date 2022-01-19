@@ -1,4 +1,25 @@
-过滤器 
+过滤器
+
+!tcp.port==3389 
+排除RDP流量 
+ 
+tcp.flags.syn==1  
+具有SYN标志位的TCP数据包 
+ 
+tcp.flags.rst==1 
+具有RST标志位的TCP数据包 
+ 
+!arp 
+排除ARP流量 
+ 
+http 
+所有HTTP流量 
+ 
+tcp.port==23 || tcp.port 21 
+文本管理流量（Telnet或FTP） 
+ 
+smtp || pop || imap 
+文本email流量（SMTP、POP或IMAP）
  
 tcp[13]&32==32 
 设置了URG位的TCP数据包 
