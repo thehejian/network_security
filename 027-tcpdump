@@ -1,0 +1,75 @@
+[root@www ~]# tcpdump [-AennqX] [-i 接口] [-w 储存档名] [-c 次数] \
+[-r 档案] [所欲撷取的封包数据格式]
+选项与参数：
+-A ：封包的内容以 ASCII 显示，通常用来捉取 WWW 的网页封包资料。
+-e ：使用资料连接层 (OSI 第二层) 的 MAC 封包数据来显示；
+-nn：直接以 IP 及 port number 显示，而非主机名与服务名称
+-q ：仅列出较为简短的封包信息，每一行的内容比较精简
+-X ：可以列出十六进制 (hex) 以及 ASCII 的封包内容，对于监听封包内容
+很有用
+-i ：后面接要『监听』的网络接口，例如 eth0, lo, ppp0 等等的界面；
+-w ：如果你要将监听所得的封包数据储存下来，用这个参数就对了！后面接
+档名
+-r ：从后面接的档案将封包数据读出来。那个『档案』是已经存在的档案，
+并且这个『档案』是由 -w 所制作出来的。
+-c ：监听的封包数，如果没有这个参数， tcpdump 会持续不断的监听，
+直到使用者输入 [ctrl]-c 为止。
+
+
+tcpdump -i eth0 -nn
+
+[root@VM-0-14-centos ~]# tcpdump -i eth0 -nn -c 3
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+10:37:45.458676 IP 172.17.0.14.22 > 222.90.65.109.22140: Flags [P.], seq 3098137110:3098137318, ack 925515345, win 256, options [nop,nop,TS val 1865073 ecr 1099031955], length 208
+10:37:45.458842 IP 172.17.0.14.22 > 222.90.65.109.22140: Flags [P.], seq 208:448, ack 1, win 256, options [nop,nop,TS val 1865073 ecr 1099031955], length 240
+10:37:45.458880 IP 172.17.0.14.22 > 222.90.65.109.22140: Flags [P.], seq 448:672, ack 1, win 256, options [nop,nop,TS val 1865073 ecr 1099031955], length 224
+3 packets captured
+3 packets received by filter
+0 packets dropped by kernel
+
+[root@VM-0-14-centos ~]# tcpdump -i eth0 -nn -c 5 port 22
+#-i 接网卡
+#-nn 跟其他命令的-n一样
+#-c 5 执行5次
+#port 22 查看22端口
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+10:41:47.852262 IP 172.17.0.14.22 > 222.90.65.109.22140: Flags [P.], seq 3098140758:3098140966, ack 925518289, win 256, options [nop,nop,TS val 2107467 ecr 1099274358], length 208
+10:41:47.852419 IP 172.17.0.14.22 > 222.90.65.109.22140: Flags [P.], seq 208:448, ack 1, win 256, options [nop,nop,TS val 2107467 ecr 1099274358], length 240
+10:41:47.852458 IP 172.17.0.14.22 > 222.90.65.109.22140: Flags [P.], seq 448:672, ack 1, win 256, options [nop,nop,TS val 2107467 ecr 1099274358], length 224
+10:41:47.852491 IP 172.17.0.14.22 > 222.90.65.109.22140: Flags [P.], seq 672:896, ack 1, win 256, options [nop,nop,TS val 2107467 ecr 1099274358], length 224
+10:41:47.852525 IP 172.17.0.14.22 > 222.90.65.109.22140: Flags [P.], seq 896:1120, ack 1, win 256, options [nop,nop,TS val 2107467 ecr 1099274358], length 224
+5 packets captured
+5 packets received by filter
+0 packets dropped by kernel
+
+hejian@192 ~ % tcpdump -i lo0 -nn -c 5
+#-i lo0 查看回环网卡
+#-nn 不按名称查看
+#-c 5 执行5次
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on lo0, link-type NULL (BSD loopback), capture size 262144 bytes
+10:52:16.937588 IP 127.0.0.1.49788 > 127.0.0.1.64007: Flags [P.], seq 875892747:875892767, ack 1640043149, win 6375, options [nop,nop,TS val 2419090862 ecr 4216071418], length 20
+10:52:16.937831 IP 127.0.0.1.64007 > 127.0.0.1.49788: Flags [.], ack 20, win 5008, options [nop,nop,TS val 4216072418 ecr 2419090862], length 0
+10:52:17.937596 IP 127.0.0.1.49788 > 127.0.0.1.64007: Flags [P.], seq 20:40, ack 1, win 6375, options [nop,nop,TS val 2419091862 ecr 4216072418], length 20
+10:52:17.937847 IP 127.0.0.1.64007 > 127.0.0.1.49788: Flags [.], ack 40, win 5007, options [nop,nop,TS val 4216073418 ecr 2419091862], length 0
+10:52:18.629279 IP 127.0.0.1.51323 > 127.0.0.1.7890: Flags [S], seq 3907866965, win 65535, options [mss 16344,nop,wscale 6,nop,nop,TS val 119538160 ecr 0,sackOK,eol], length 0
+5 packets captured
+8 packets received by filter
+0 packets dropped by kernel
+
+[root@VM-0-14-centos ~]# tcpdump -i eth0 -nn 'port 22 and src 220.90.65.109'
+
+
+
+
+
+
+
+
+
+
+
+
+
