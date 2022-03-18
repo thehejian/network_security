@@ -1,0 +1,9 @@
+认证  authentication
+授权  authorization
+审计  accounting
+<Huawei>system-view
+[Huawei]sysname ar1
+[ar1]user-interface vty 0 4
+#0 1 2 3 4 共5个用户
+[ar1-ui-vty0-4]authentication-mode aaa
+#启用aaa认证
