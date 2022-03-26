@@ -1,6 +1,9 @@
 luyouqi
+路由器
 fuze butong wangluo zhijian zhuanfa shuju
+负责不同网络之间转发数据
 	mubiao lujing fuza,luyouqi jueding zuijia lujing
+	
 	yekeyi zhilian zhuji chongdang wangguan
 wangluo hulian zui hexin shebei
 gongzuo yuanli 
