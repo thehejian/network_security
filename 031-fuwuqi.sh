@@ -61,6 +61,12 @@ zhichi zhenlie jishu leibie
 	RAID6   junheng
 		>=4	n-2/n	jiaoyanpan 2	duxie sudu jiaogao
 
+qita canshu
+	dianyuan:dandian shuangdian
+	zhengji gonglv:460W\675W\750W...
+	wangluo jiekou\guanli jiekou
+		2ge qianzhao yitai wangkou + 1ge guanli jiekou
+		shifou guangkou wangka
 
 
 
