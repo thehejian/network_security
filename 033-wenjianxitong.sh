@@ -11,6 +11,10 @@ Windows changjian wenjian xitong
 
 Administrator huoqu quanxian
 	youji -- shuxing -- anquan -- gaoji -- suoyouzhe -- genggai -- shuru -- administrator
+win+r cmd
+	net use h: \\192.168.1.10\mp5
+	net use h:\\192.168.1.10\mp5$
+mingchen$	yincang wenjian
 		
 
 
