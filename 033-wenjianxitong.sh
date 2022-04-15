@@ -15,6 +15,15 @@ win+r cmd
 	net use h: \\192.168.1.10\mp5
 	net use h:\\192.168.1.10\mp5$
 mingchen$	yincang wenjian
+
+gongxiang quanxian he anquan quanxian shi lianghuishi,buneng xianghu diejia
+
+anquan shi NTFS de quanxian
+
+wangluo fangwen shi cai hui kaolv anquan quanxian he gongxiang quanxian
+
+bendi fangwen gen gongxiang quanxian wanquan meiyou guanxi
+
 		
 
 
