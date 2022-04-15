@@ -5,3 +5,45 @@ jieben zuoyong
 Windows changjian wenjian xitong
 	FAT32,wenjian fenpeibiao
 	NTFS,xin jishu wenjian xitong
+		jujue quanxian youxian(bu chongtu)
+		quanxian leijia(jujue dayu yiqie)
+		quanxian jicheng(xiaji jicheng shangji)(gaoji -- jinyong jicheng)
+
+Administrator huoqu quanxian
+	youji -- shuxing -- anquan -- gaoji -- suoyouzhe -- genggai -- shuru -- administrator
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
