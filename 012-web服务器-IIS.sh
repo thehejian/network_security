@@ -16,6 +16,10 @@ Internet Informatica Service
   
 在win Sever版本上创建
 管理服务区——管理——添加角色
+gongju -- IIS guanliqi
+tingzhi moren wangzhan
+youji wangzhan -- tianjia wangzhan
+
 
 桌面版本
 https://blog.csdn.net/yuanguozhengjust/article/details/25747729
