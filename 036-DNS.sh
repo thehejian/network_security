@@ -14,3 +14,13 @@ dingjiyu	zuzhiyu guojia/diqu yuming
 erjiyu
 hulianwang zhandian
 
+jilu leixing
+A jilu		FQDN --> IP dizhi de jilu
+PTR zhizhen 	IP dizhi --> FQDN de jilu
+(FQDN wanquan hege yuming)
+
+xinjian zhuji
+
+kehu duan zai TCP/IP shuxing peizhi DNS fuwuqi
+	
+
