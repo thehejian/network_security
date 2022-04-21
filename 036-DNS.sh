@@ -22,5 +22,35 @@ PTR zhizhen 	IP dizhi --> FQDN de jilu
 xinjian zhuji
 
 kehu duan zai TCP/IP shuxing peizhi DNS fuwuqi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
