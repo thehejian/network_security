@@ -12,5 +12,9 @@ neicun
 	ROM zhidu cunchuqi:kedu bukexie buyi diushi
 waicun
 
+BIOS
+Basic Input/Output System:jiben shuru shuchu xitong
+
+
 
 
