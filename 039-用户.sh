@@ -1,7 +1,12 @@
+用户类型
 yonghu leixing
+超级用户
 chaoji yonghu	0
+系统用户
 xitong yonghu	1-999
+普通用户
 putong yonghu	1000-60000
+
 
 putong yonghu de zhuyao shuxing
 denglu ming\mima\jia mulu(/home/yonghuming)
