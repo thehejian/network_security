@@ -1,6 +1,9 @@
 
-#########################################################beifen PC
+#########################################################备份 PC
+#为批量安装的PC提供GHO备份文件
 #wei piliang anzhuang de PC tigong GHO benfen wenjian
+
+（不是PXE 服务器）先安装 一台，导出GHO文件
 (bushi PXE fuwuqi)xian zhuang yitai,daochu GHO wenjian
 BIOS - Boot - Network boot from Intel E1000e
 IP dizhi wei zidong huoqu
